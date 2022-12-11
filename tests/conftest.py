@@ -5,6 +5,11 @@ from pages.login import LoginPage
 
 
 @pytest.fixture()
+def debug_mode() -> bool:
+    return True
+
+
+@pytest.fixture()
 def user_email() -> str:
     return "administrator@testarena.pl"
 
