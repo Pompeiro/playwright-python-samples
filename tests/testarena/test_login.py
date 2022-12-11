@@ -1,9 +1,7 @@
 import _pytest.fixtures
 from playwright.sync_api import Page, expect
 
-from pages.dashboard import DashboardPage
-from pages.login import LoginPage
-from pages.password_recovery import PasswordRecoveryPage
+from pages import DashboardPage, LoginPage, PasswordRecoveryPage
 
 
 def test_someone_can_login_with_valid_credentials(

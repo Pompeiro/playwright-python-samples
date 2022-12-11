@@ -1,8 +1,7 @@
 import _pytest.fixtures
 from playwright.sync_api import Page, expect
 
-from pages.login import LoginPage
-from pages.password_recovery import PasswordRecoveryPage
+from pages import LoginPage, PasswordRecoveryPage
 
 
 def test_someone_should_be_redirected_to_login_page_by_clicking_login(

@@ -20,4 +20,4 @@ class BasePage:
         """
         test_name = node_id[node_id.find("::") + 2:]
         if debug_mode:
-            self.page.screenshot(path="screenshots/"+test_name +"/" + screenshot_name + ".jpg",full_page=True)
+            self.page.screenshot(path="screenshots/" + test_name + "/" + screenshot_name + ".jpg",full_page=True)
