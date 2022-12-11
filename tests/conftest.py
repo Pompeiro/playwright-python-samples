@@ -29,6 +29,5 @@ def page_with_user(  # pylint: disable=redefined-outer-name
 ) -> Page:
     login_page = LoginPage(page)
     login_page.navigate()
-
     login_page.login(email=user_email, password=user_password)
     return page

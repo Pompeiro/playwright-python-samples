@@ -38,7 +38,7 @@ def test_email_address_filled_with_invalid_email_format_triggers_error(
     expect(login_page.password_validation_error).to_be_visible()
 
 
-def test_is_redirected_to_password_recovery_page_by_clicking_forgot_password(
+def test_someone_should_be_redirected_to_password_recovery_page_after_clicking_forgot_password_link(
     page: Page,
 ) -> None:
     login_page = LoginPage(page)
